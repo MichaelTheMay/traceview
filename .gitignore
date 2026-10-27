@@ -1,0 +1,36 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Secrets — never commit
+.env
+.env.local
+.env.*.local
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Traceview data dirs (local-only)
+.traceview/
+.traceview-dev/
+traces/
+
+# Viewer build outputs
+viewer/node_modules/
+viewer/dist/
+# Note: traceview/_viewer_dist/ IS committed so `pip install git+...` works
+# without a Node toolchain. Rebuild it with scripts/build_viewer.py.
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Claude Code local state (never commit)
+.claude/
+OneDrive/
